@@ -47,11 +47,11 @@ This project serves as a valuable resource for:
 
 ## Contributors
 - BismahGhafoor
-- sca16
 - Skycr
 - aol3
 - Patca26 
 - barbaratpferreira
+- sca16
 - Rouslane-A
 
 ## Disclaimer
