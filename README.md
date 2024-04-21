@@ -1,4 +1,4 @@
-# RNAseq---Steered-research-project
+# sc_RNAseq_analysis---Steered-research-project
 ## Overview
 ### Objective
 The objective of this repository is to conduct a comprehensive reanalysis of the paper titled 'Single-cell Analysis Reveals Inter- and Intratumour Heterogeneity in Metastatic Breast Cancer' while also performing a novel single-cell analysis using alternative computational methods. The primary goal is to replicate the experimental analyses described in the original paper to assess the reprudicility of the findings. Additionally, this project aims to compare the results obtained from the replication with those derived from the alternative pipelines and software, thereby identifying any additional insights. The repository provides code, data, and documentation to facilitate replication, comparison and interpretation of the analyses conducted.
