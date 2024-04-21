@@ -15,6 +15,7 @@ In addition to replicating the original analysis, this project includes a novel 
 - Alignment: Script for aligning the data to the refernce genome
 - Count Matrix: Script for genrating the count matrix from aligned data
 - Seurat Pipeline: Script detailing the steps involved in using the Seurat package for clustering analysis and visualization.
+  
 **Reanalysis:** This directory contains all the scripts for the replication of the orginal paper
 
 ## How to Use
