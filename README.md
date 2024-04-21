@@ -20,11 +20,11 @@ The graphical user interface developed facilitates the visualization of results 
   
 **Reanalysis:** This directory contains all the scripts for the replication of the orginal paper
 
+**Graphical User Interface:** This directory contains scripts for the GUI
+
 ## Dependencies
 - Access to a high performance computing system particularly ALICE is required.
 - The required packages and their corresponding version numbers are listed in the 'requirements.txt' file, ensure these are installed prior to running the scripts.
-
-**Graphical User Interface:** This directory contains scripts for the GUI
 
 ## How to Use
 **Reanalysis**
@@ -38,5 +38,25 @@ The graphical user interface developed facilitates the visualization of results 
 **Graphical User Interface**
 
 ## Why the Project is Useful
+This project serves as a valuable resource for:
+- Researchers seeking to replicate experimental procedures and analyses from the original study for verification.
+- Scientists interested in exploring alternative computational methods in single-cell analysis.
+- Professionals looking to identify new insights by comparing results between replicated and novel analyses.
+- Individuals who benefit from enhanced accessibility through a graphical user interface for result visualisation.
+- Educators and students utilizing it as an educational resource in single-cell analysis.
+
+## Contributors
+- BismahGhafoor
+- sca16
+- Skycr
+- aol3
+- Patca26 
+- barbaratpferreira
+- Rouslane-A
+
+## Disclaimer
+This project is part of an academic assessment and is designed foe educational purposes only.
+
+
 
 
