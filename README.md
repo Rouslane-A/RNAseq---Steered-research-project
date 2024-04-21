@@ -28,7 +28,8 @@ The graphical user interface developed facilitates the visualization of results 
 **Novel Analysis**
 - Download the repository
 - Navigate to the 'Novel Analysis' directorty
-- Run the scripts contained in the 'Novel Analysis' directory
+- Navigate to the Quality control directory and run the scripts
+- Navigate an drun the scripyts in the Filtering directory
 
 **Graphical User Interface**
 
