@@ -20,6 +20,10 @@ The graphical user interface developed facilitates the visualization of results 
   
 **Reanalysis:** This directory contains all the scripts for the replication of the orginal paper
 
+## Dependencies
+- Access to a high performance computing system particularly ALICE is required.
+- The required packages and their corresponding version numbers are listed in the 'requirements.txt' file, ensure these are installed prior to running the scripts.
+
 **Graphical User Interface:** This directory contains scripts for the GUI
 
 ## How to Use
@@ -32,4 +36,7 @@ The graphical user interface developed facilitates the visualization of results 
 - Navigate and run the scripts in the Filtering directory
 
 **Graphical User Interface**
+
+## Why the Project is Useful
+
 
