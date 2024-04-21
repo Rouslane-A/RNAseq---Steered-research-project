@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # ALICE settings
-SBATCH --job-name=STAR_index
-SBATCH --nodes=2
-SBATCH --tasks-per-node=4
-SBATCH --mem=60gb
-SBATCH --time=10:00:00
-SBATCH --mail-type=BEGIN,END,FAIL
-SBATCH --mail-user=bg171@student.le.ac.uk
+#SBATCH --job-name=STAR_index
+#SBATCH --nodes=2
+#SBATCH --tasks-per-node=4
+#SBATCH --mem=60gb
+#SBATCH --time=10:00:00
+#SBATCH --mail-type=BEGIN,END,FAIL
+#SBATCH --mail-user=bg171@student.le.ac.uk
 
 # Load the required module
 module load fastqc/0.12.1-hkgpcde
