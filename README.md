@@ -55,7 +55,7 @@ This project serves as a valuable resource for:
 - Rouslane-A
 
 ## Disclaimer
-This project is part of an academic assessment and is designed foe educational purposes only.
+This project is part of an academic assessment and is designed for educational purposes only.
 
 
 
