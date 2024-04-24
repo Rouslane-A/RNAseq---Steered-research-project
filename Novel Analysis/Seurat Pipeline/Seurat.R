@@ -12,6 +12,9 @@ library(org.Hs.eg.db)
 library(AnnotationDbi)
 library(pheatmap)
 
+# Import the CSV file
+counts <- read.csv('/home/bg171/srp/final_counts.csv', row.names = 1)
+
 ## process the data so no rownames or column names have '_' (this is not supported by Seurat)
 rownames(counts) <- gsub(pattern = "_", 
                          replacement = "-", 
