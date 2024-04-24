@@ -24,7 +24,7 @@ The graphical user interface developed facilitates the visualization of results 
 
 ## Dependencies
 - Access to a high performance computing system particularly ALICE is required.
-- The required packages and their corresponding version numbers are listed in the 'requirements.txt' file, ensure these are installed prior to running the scripts.
+- The required packages and their corresponding version numbers are listed in the 'Requirements.txt' file, ensure these are installed prior to running the scripts.
 
 ## How to Use
 **Reanalysis**
