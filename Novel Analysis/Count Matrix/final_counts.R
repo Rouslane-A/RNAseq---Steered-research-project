@@ -1,7 +1,10 @@
 library(AnnotationDbi)
 library(EnsDb.Hsapiens.v79)
 
+# Import the count matrix
 counts <- read.csv(file = '/home/bg171/SRP/final_counts.csv', row.names = 1)
+
+# take the row names from teh matrix and assign them as the ensemble ids
 ensembl_ids <- rownames(counts)
 head(ensembl_ids)
 
@@ -24,4 +27,4 @@ rownames(counts) <- matched_gene_symbols
 head(counts)
 
 # Write the updated counts dataframe to a new file
-write.csv(counts, "counts_updated.csv", row.names = TRUE)
+write.csv(counts, "final_counts.csv", row.names = TRUE)
