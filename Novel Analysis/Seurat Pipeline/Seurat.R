@@ -89,9 +89,11 @@ seuratObject <- FindVariableFeatures(seuratObject, selection.method = "vst", nfe
 top10 <- head(VariableFeatures(seuratObject), 10)
 
 ## Plot variable features with and with labels
-plot1 <- LabelPoints(plot = plot1, points = top10, repel = TRUE) + 
+plot1 <- VariableFeaturePlot(seuratObject) + 
+  theme(legend.position = "top")
+plot2 <- LabelPoints(plot = plot1, points = top10, repel = TRUE) + 
   theme(legend.position = "none")
-plot1
+plot2
 
 ## Check which S phase genes are present in your dataset
 s.genes <- cc.genes$s.genes[cc.genes$s.genes %in% rownames(seuratObject)]
