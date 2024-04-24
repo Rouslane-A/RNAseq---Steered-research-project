@@ -1,6 +1,13 @@
-Bash packages:
+HPC (ALICE) modules required:
+fastqc/0.12.1-hkgpcde
+python/3.10.12-tggsi7t
+TrimGalore-0.6.10
+hisat2 (check module version number)
+hisat2/2.2.1-eovlo7b
+samtools/1.17-wenuvv5
+R/4.3.1
 
-R packages:
+RStudio packages required:
 Seurat_5.0.3 
 ggplot2_3.5.1 
 patchwork_1.2.0
