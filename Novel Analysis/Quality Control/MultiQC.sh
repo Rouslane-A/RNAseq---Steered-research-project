@@ -15,7 +15,6 @@ module load python/3.10.12-tggsi7t
 
 # Define the directories where FastQC and fastq_screen results are stored
 FASTQC_DIR="/scratch/alice/b/bg171/fastqc_results_alice"
-FASTQ_SCREEN_DIR="/scratch/alice/b/bg171/fastq_screen_results"
 
 # Define the output directory for MultiQC
 MULTIQC_OUTPUT_DIR="/scratch/alice/b/bg171/multiqc_output_alice"
