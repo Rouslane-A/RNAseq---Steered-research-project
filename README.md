@@ -12,10 +12,10 @@ The graphical user interface developed facilitates the visualization of results 
 
 ## Contents
 **Novel Analysis:** This directory contains all the scripts for the novel analysis, this includes:
-- Quality control: Script for assessing the quality of the data
+- Quality control: Scripts for assessing the quality of the data
 - Filtering: Script for filtering the data based on a defined criteria
-- Alignment: Script for aligning the data to the refernce genome
-- Count Matrix: Script for genrating the count matrix from aligned data
+- Alignment: Scripts for aligning the data to the refernce genome
+- Count Matrix: Scripts for genrating the count matrix from aligned data
 - Seurat Pipeline: Script detailing the steps involved in using the Seurat package for clustering analysis and visualization.
   
 **Reanalysis:** This directory contains all the scripts for the replication of the orginal paper
@@ -32,8 +32,18 @@ The graphical user interface developed facilitates the visualization of results 
 **Novel Analysis**
 - Download the repository
 - Navigate to the 'Novel Analysis' directorty
-- Navigate to the Quality control directory and run the scripts
-- Navigate and run the scripts in the Filtering directory
+- Navigate to the Quality control directory and run the scripts in the following order:
+  1. FastQC.sh
+  2. MultiQC.sh
+- Navigate and run the script in the Filtering directory
+- Navigate to the Alignment directory and run the scripts in the following order:
+  1. HiSat2_index.sh
+  2. HiSat2.sh
+- Navigate to the Count Matric directory and run the scripts in the following order:
+  1. FeatureCounts.sh
+  2. final_counts.R
+- Navigate to the Seurat Pipline directory and run the script. 
+  
 
 **Graphical User Interface**
 
