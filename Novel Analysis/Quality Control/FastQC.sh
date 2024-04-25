@@ -1,3 +1,6 @@
+# This script performs quality control on raw sequencing data using FastQC.
+# Last modifed: 25.04.2025
+
 #!/bin/bash
 
 # ALICE settings
