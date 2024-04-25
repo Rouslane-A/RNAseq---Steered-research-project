@@ -1,3 +1,14 @@
+# This comprehensive R script utilizes the Seurat package to perform detailed single-cell RNA sequencing analysis.
+# Key steps include data importing, preprocessing to ensure compatibility with Seurat, creation of Seurat objects,
+# and rigorous quality control checks. It includes normalization, feature selection, and various visualizations such
+# as violin plots, scatter plots, and PCA plots to assess data quality and expression patterns. The script proceeds
+# with cell cycle scoring, dimensional reduction via PCA and UMAP, and clustering. Additionally, it maps gene symbols
+# to Entrez IDs for Gene Set Enrichment Analysis (GSEA), calculates cell cycle phase percentages per cluster,
+# identifies and visualizes marker genes, and performs enrichment analysis for clusters. The outputs are formatted
+# for insightful biological interpretation and presented through various plots and heatmaps, providing a comprehensive
+# toolkit for in-depth analysis of single-cell transcriptomic data.
+# Last modified: 25.04.2024
+
 # Importing the packages
 library(Seurat)
 library(ggplot2)
