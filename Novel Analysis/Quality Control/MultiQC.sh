@@ -1,3 +1,6 @@
+# This script performs MultiQC on the specifed directories.
+# Last modifed: 25.04.2025
+
 #!/bin/bash
 
 # ALICE settings
