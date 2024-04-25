@@ -1,3 +1,10 @@
+# This R script performs multiple data manipulation steps on RNA sequencing counts data.
+# It converts Ensembl gene IDs to gene symbols, maps SRR identifiers to GSM codes,
+# and further maps GSM codes to sample titles for enhanced readability and downstream analysis.
+# The script utilizes packages such as AnnotationDbi, dplyr, readr, and stringr to efficiently handle and transform the data.
+# Outputs are systematically written to updated CSV files, reflecting each stage of transformation within a biological data analysis workflow.
+# Last modified: 25.04.2024
+
 library(AnnotationDbi)
 library(EnsDb.Hsapiens.v79)
 library(dplyr)
