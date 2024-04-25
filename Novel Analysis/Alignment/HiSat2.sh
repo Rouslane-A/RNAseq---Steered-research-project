@@ -1,3 +1,6 @@
+# This script aligns trimmed RNA sequencing data to the human genome (hg38) using HISAT2 and post-processes the alignments with Samtools.
+# Last modified: 25.04.2024
+
 #!/bin/bash
 
 # ALICE settings
