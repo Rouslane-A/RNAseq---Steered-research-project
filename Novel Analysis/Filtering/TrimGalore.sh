@@ -1,3 +1,8 @@
+# This script performs quality trimming and quality control on paired-end sequencing data using Trim Galore and FastQC.
+# It is designed to run as a job on the ALICE high-performance computing environment.
+# It sets up job parameters, loads necessary modules, and executes the trimming and QC process across all read pairs in the specified directory.
+# Last modified: 25.04.2024
+
 #!/bin/bash
 
 # ALICE Settings
