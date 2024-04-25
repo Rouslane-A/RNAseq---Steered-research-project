@@ -1,3 +1,7 @@
+# This script runs a gene expression quantification pipeline using the Rsubread package in R, focusing on paired-end RNA-seq data aligned to the human genome (GRCh38).
+# The script automates the installation of necessary R packages, performs read counting with featureCounts, and outputs count matrices and statistics for each sample.
+# Last modified: 25.04.2024
+
 #!/bin/bash
 
 # ALICE settings
