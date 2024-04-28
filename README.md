@@ -12,6 +12,7 @@ The graphical user interface developed facilitates the visualization of results 
 
 ## Contents
 **Novel Analysis:** This directory contains all the scripts for the novel analysis, this includes:
+- DownloadData.sh: this scrip downloads the raw data 
 - Quality control: Scripts for assessing the quality of the data
 - Filtering: Script for filtering the data based on a defined criteria
 - Alignment: Scripts for aligning the data to the refernce genome
@@ -32,6 +33,7 @@ The graphical user interface developed facilitates the visualization of results 
 **Novel Analysis**
 - Download the repository
 - Navigate to the 'Novel Analysis' directorty
+- Run the DownloadData.sh script
 - Navigate to the Quality control directory and run the scripts in the following order:
   1. FastQC.sh
   2. MultiQC.sh
