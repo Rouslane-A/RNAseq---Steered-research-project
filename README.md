@@ -12,7 +12,7 @@ The graphical user interface developed facilitates the visualization of results 
 
 ## Contents
 **Novel Analysis:** This directory contains all the scripts for the novel analysis, this includes:
-- DownloadData.sh: this scrip downloads the raw data 
+- DownloadData.sh: this scrip downloads the raw data
 - Quality control: Scripts for assessing the quality of the data
 - Filtering: Script for filtering the data based on a defined criteria
 - Alignment: Scripts for aligning the data to the refernce genome
