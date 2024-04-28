@@ -10,6 +10,7 @@ library(EnsDb.Hsapiens.v79)
 library(dplyr)
 library(readr)
 library(stringr)
+library(ensembldb)
 
 # CONVERTING THE ENSEMBLE IDS TO GENE SYMBOLS
 counts <- read.csv(file = '/home/bg171/SRP/counts_backup.csv', row.names = 1)
