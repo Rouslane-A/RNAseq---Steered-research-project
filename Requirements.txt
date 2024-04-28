@@ -1,8 +1,8 @@
 HPC (ALICE) modules required:
+sratoolkit/3.0.0-5fetwpi
 fastqc/0.12.1-hkgpcde
 python/3.10.12-tggsi7t
 TrimGalore-0.6.10
-hisat2 (check module version number)
 hisat2/2.2.1-eovlo7b
 samtools/1.17-wenuvv5
 R/4.3.1
