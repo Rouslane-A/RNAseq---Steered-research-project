@@ -37,6 +37,8 @@ colnames(counts) <- gsub(pattern = "_",
 
 ## create a SeuratObject for analysis
 seuratObject <- CreateSeuratObject(counts = counts)
+rm(counts)
+gc()
 
 # QUALITY CONTROL
 ## calculate the percentage of mitochondrial genes
@@ -143,6 +145,45 @@ DimPlot(seuratObject, reduction = "pca")
 DimHeatmap(seuratObject, dims = 1, cells = 500, balanced = TRUE)
 DimHeatmap(seuratObject, dims = 1:9, cells = 500, balanced = TRUE)
 
+#perform t-SNE
+seurat_obj <- RunTSNE(seuratObject, dims = 1:20)
+
+#print the first few rows of the Seurat object to check everything is in order
+print(head(rownames(seurat_obj)))  
+print(head(colnames(seurat_obj))) 
+
+# create a new metadata column to classify cells as 'Tumor' or 'Metastases' based on the cell names
+cell_names <- colnames(seurat_obj)
+seurat_obj$Origin <- ifelse(grepl("Tumor", cell_names, ignore.case = TRUE), "Tumor",
+                            ifelse(grepl("Metastases", cell_names, ignore.case = TRUE), "Lung",
+                              ifelse(grepl("Lung.CTRL", cell_names, ignore.case = TRUE), "Lung",
+                                     ifelse(grepl("Tumor Control", cell_names, ignore.case = TRUE), "Tumor", NA))))
+                            
+                            #output the table of 'Origin' to verify classifications
+                            table(seurat_obj$Origin)
+                            
+                            #generate t-SNE plot coloring cells by their origin
+                            tSNE_by_Origin <- DimPlot(seurat_obj, reduction = "tsne", group.by = "Origin") + 
+                              ggtitle("t-SNE by Origin") +
+                              xlab("t-SNE 1") + 
+                              ylab("t-SNE 2")
+
+# create a new metadata column to classify cells as 'MDAMB231','PDX1', 'PDX2', 'PDX3', or 'PDX4' based on the cell names
+seurat_obj$Model <- ifelse(grepl("MDAMB231", cell_names, ignore.case = TRUE), "MDAMB231",
+                            ifelse(grepl("HBRX3078", cell_names, ignore.case = TRUE), "PDX1",
+                                   ifelse(grepl("HBRX2353", cell_names, ignore.case = TRUE), "PDX2",
+                                          ifelse(grepl("HBRX1921", cell_names, ignore.case = TRUE), "PDX3", 
+                                                 ifelse(grepl("HBRX2344", cell_names, ignore.case = TRUE), "PDX4", NA)))))
+                            
+                            #output the table of 'Origin' to verify classifications
+                            table(seurat_obj$Model)
+                            
+                            #generate t-SNE plot coloring cells by their model
+                            tSNE_by_Model <- DimPlot(seurat_obj, reduction = "tsne", group.by = "Model") + 
+                              ggtitle("t-SNE by Model") +
+                              xlab("t-SNE 1") + 
+                              ylab("t-SNE 2")
+                            
 ## Clustering the cells
 seuratObject <- FindNeighbors(seuratObject, dims = 1:4, verbose = FALSE)
 seuratObject <- FindClusters(seuratObject, resolution = 0.5, verbose = FALSE)
@@ -262,9 +303,8 @@ nes_list <- lapply(gsea_results, function(x) {
   }
 })
 
-##
 nes_matrix <- do.call(cbind, nes_list)
-rownames(nes_matrix) <- names(nes_list[[1]])  # Replace this with actual gene set names from your results
+rownames(nes_matrix) <- names(nes_list[[1]])
 
 ## Plot the heatmap
 pheatmap(nes_matrix,
@@ -283,7 +323,6 @@ pheatmap(nes_matrix,
 supercluster_mapping <- c("2" = "A", "4" = "A", "5" = "B", "3" = "B", "7" = "B")
 
 ## Create a new column 'superclusters' in the metadata
-## Assuming 'supercluster_mapping' is defined appropriately elsewhere in your code
 seuratObject@meta.data$superclusters <- supercluster_mapping[as.character(seuratObject@meta.data$seurat_clusters)]
 
 ## Define the EMT and proliferation markers
