@@ -19,7 +19,14 @@ The graphical user interface developed facilitates the visualization of results 
 - Count Matrix: Scripts for genrating the count matrix from aligned data
 - Seurat Pipeline: Script detailing the steps involved in using the Seurat package for clustering analysis and visualization.
   
-**Reanalysis:** This directory contains all the scripts for the replication of the orginal paper
+**Reanalysis:** This directory contains all the scripts for the replication of the orginal paper:
+- RNA Sequencing Data Analyses:
+  - This folder contains multiple for replicating the first part of the paper's method. Scripts are for Downloading the raw data, Indexing the genome, Mapping to the indexed genome, Sorting the Mapped files, and generating a Counts Matrix.
+- Removal of Potential Doublets:
+  - This folder contains Scripts for cleaning the Counts Matrix following the steps from the paper.
+- Inference and Correction of Cell Cycle Signal:
+  - This folder contains scripts for infering the cell cycle from the Counts Matrix.
+- Dimensionality Reduction, Clustering, Differential Gene Expression:
 
 **Graphical User Interface:** This directory contains scripts for the GUI
 
@@ -29,6 +36,10 @@ The graphical user interface developed facilitates the visualization of results 
 
 ## How to Use
 **Reanalysis**
+- Download the repository
+- Navigate to the 'Re_Analysis' directorty
+- The folders and scripts are numbered, run the scripts following the order
+NOTE : The scripts have folder directories that need to be modified
 
 **Novel Analysis**
 - Download the repository
