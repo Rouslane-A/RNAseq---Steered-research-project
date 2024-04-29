@@ -1,3 +1,29 @@
+Re-Analysis:
+HPC (Alice) Modules used:
+sratoolkit/3.0.0-5fetwpi
+star/2.7.10b-m3zkpic
+samtools/1.17-wenuvv5
+python/3.10.12-tggsi7t
+R/4.3.1
+
+softwares downloaded:
+FastQ Screen v0.15.3
+
+
+R Packages used:
+
+
+files to download:
+https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/analysisSet/hg38.analysisSet.fa.gz
+https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/genes/hg38.refGene.gtf.gz
+https://ftp.ensembl.org/pub/release-96/gtf/homo_sapiens/Homo_sapiens.GRCh38.96.gtf.gz
+https://genome-idx.s3.amazonaws.com/bt/GRCh38_noalt_as.zip
+https://bowtie-bio.sourceforge.net/index.shtml
+
+
+
+Novel Analysis:
+
 HPC (ALICE) modules required:
 sratoolkit/3.0.0-5fetwpi
 fastqc/0.12.1-hkgpcde
