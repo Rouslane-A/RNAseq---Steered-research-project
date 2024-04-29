@@ -11,7 +11,12 @@ FastQ Screen v0.15.3
 
 
 R Packages used:
-
+Rsubread version 2.14.2
+data.table version 1.14.8
+griph 0.1.1
+AnnotationDbi version 1.62.2
+org.Hs.eg.db version 3.17.0
+scater version 1.28.0
 
 files to download:
 https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/analysisSet/hg38.analysisSet.fa.gz
