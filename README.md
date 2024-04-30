@@ -59,6 +59,7 @@ NOTE : The scripts have folder directories that need to be modified
   
 
 **Graphical User Interface**
+- Download and run the GUI.R script in RStudio
 
 ## Why the Project is Useful
 This project serves as a valuable resource for:
