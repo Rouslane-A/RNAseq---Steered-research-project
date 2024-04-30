@@ -51,3 +51,14 @@ EnsDb.Hsapiens.v79_2.99.0
 org.Hs.eg.db_3.17.0 
 AnnotationDbi_1.62.2 
 pheatmap_1.0.12
+
+Graphical User Interface:
+
+plotly_4.10.4  
+tidyr_1.3.0    
+thematic_0.1.5 
+bslib_0.7.0    
+dplyr_1.1.2    
+ggplot2_3.5.1  
+Rtsne_0.17    
+shiny_1.8.1.1
